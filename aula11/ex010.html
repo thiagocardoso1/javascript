@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de multas</title>
+    <style>
+        body {
+            background-color: gray;
+            font: normal 16px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Radar de transito</h1>
+    <p>
+        Digite a velocidade do carro em km/h: <input type="number" name="vel1" id="vel1">
+        <input type="button" value="Verificar" onclick="verificar()">
+    </p>
+    <div id="res"></div>
+    <script>
+        function verificar() {
+            var vel = window.document.getElementById('vel1')
+            var res = window.document.getElementById('res')
+            var velocidade = Number(vel1.value)
+
+            res.innerHTML += `A velocidade do seu carro é de ${velocidade} km/h`
+            if (velocidade > 80) {
+                res.innerHTML += '<p>Você foi <strong>multado</strong>! Dirija no limite de velocidade</p>'
+            }
+            res.innerHTML += 'Dirija sempre com o sinto de segurança!'
+        }
+    </script>
+</body>
+</html>

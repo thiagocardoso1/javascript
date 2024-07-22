@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando o DOM</title>
+    <style>
+        body {
+            background-color: gray;
+            color: white;
+            font: 20px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o dom</h1>
+    <p>Atenção eu gosto de pênis.</p>
+    <p id="gay">Se você leu isso é porque é viado.</p>
+    <p id="homi">Clique aqui se for homi</p>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var h = window.document.getElementById('homi')
+
+        /*
+        window.document.write(window.document.charset)
+        window.document.write(`<br> Olá amigo recado especial: ${p1.innerText}`)
+        h.style.backgroundColor = 'black'
+        */
+       var g = document.querySelector('p#gay')
+       g.style.backgroundColor = 'black'
+    </script>
+</body>
+</html>

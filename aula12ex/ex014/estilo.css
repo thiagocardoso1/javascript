@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(179, 150, 24);
+    font: normal 20px arial;
+}
+
+/* rgb(67, 128, 240) dia
+rgb(1, 0, 68) noite
+rgb(179, 150, 24) tarde*/
+
+header {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.452);
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+}
+
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+footer {
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
